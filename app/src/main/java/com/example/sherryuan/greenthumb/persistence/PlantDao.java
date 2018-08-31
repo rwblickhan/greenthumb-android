@@ -19,7 +19,7 @@ public interface PlantDao {
 
     // find by ID query
     // retrieve the Plant with the correct ID from the database
-    @Query("SELECT * FROM Plant WHERE id = :id")
+    @Query("SELECT * FROM Plants WHERE id = :id")
     Flowable<List<Plant>> findById(Integer id);
 
     // insert any number of PicNotes into the database
@@ -37,6 +37,6 @@ public interface PlantDao {
     void delete(Plant plant);
 
     // retrieve all Plants from the database
-    @Query("SELECT * FROM Plant")
+    @Query("SELECT * FROM Plants")
     Flowable<List<Plant>> loadAll();
 }

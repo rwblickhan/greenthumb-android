@@ -7,7 +7,7 @@ import java.util.*
 /**
  * Created by sherryuan on 2018-08-29.
  */
-@Entity
+@Entity(tableName = "Plants")
 data class Plant(
         @PrimaryKey
         var id: Int = 0,
